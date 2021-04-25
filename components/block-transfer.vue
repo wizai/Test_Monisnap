@@ -11,15 +11,16 @@
       <p class="block-transfer__infos--amount" v-if="transfer.amount">{{ transfer.amount }} EUR</p>
     </div>
     <div class="block-transfer__received">
-      <p class="block-transfer__received--title">Reçu</p>
+      <p class="block-transfer__received--title" v-if="transfer.status === 'SUCCESS'">Reçu</p>
+      <p class="block-transfer__received--title" v-else>Echec</p>
       <p class="block-transfer__received--date" v-if="transfer.date">{{ $moment(transfer.date).format("DD MMMM YYYY") }}</p>
     </div>
-    <div v-if="transfer.status === 'SUCCESS'" class="block-transfer__btn btn">
+    <button v-if="transfer.status === 'SUCCESS'" class="block-transfer__btn btn">
       Refaire l'envoi
-    </div>
-    <div v-else class="block-transfer__btn btn btn_red">
+    </button>
+    <button v-else class="block-transfer__btn btn btn_red">
       L'envoi à échoué
-    </div>
+    </button>
   </div>
 </template>
 

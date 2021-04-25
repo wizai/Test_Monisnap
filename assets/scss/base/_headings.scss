@@ -33,8 +33,21 @@ small, .text_small {
   border-radius: 5px;
   text-align: center;
   padding: 8px 12px;
+  border: 2px solid $green;
+  cursor: pointer;
+  overflow: hidden;
+  @include transition(all 0.5s ease-in-out);
+  &:hover{
+    background-color: $white;
+    color: $green;
+  }
   &.btn_red{
-    background-color: #fa8b68;
+    background-color: $red;
+    border: 2px solid $red;
+    &:hover{
+      background-color: $white;
+      color: $red;
+    }
   }
 }
 

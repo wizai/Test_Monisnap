@@ -101,14 +101,6 @@ export default {
     getNumberOfRecipients(){
       return this.recipients.length;
     },
-    getFavoriteDestination(){
-      // Create an array with only country with property status is good and after get the value with the highest occurrence + index
-      const arr = this.transfers.map(transfer=>transfer.country);
-      this.favorite.destination = arr.reduce(
-        (a,b,i,arr)=>
-          (arr.filter(v=>v===a).length>=arr.filter(v=>v===b).length?a:b),
-        null)
-    },
     getNumberOfTransfersSuccess(){
       let counter = 0;
       let $this = this;
@@ -116,6 +108,14 @@ export default {
         if (transfer.status === 'SUCCESS') counter += 1;
       }
       return counter;
+    },
+    getFavoriteDestination(){
+      // Create an array with only country with property status is good and after get the value with the highest occurrence + index
+      const arr = this.transfers.map(transfer=>transfer.country);
+      this.favorite.destination = arr.reduce(
+        (a,b,i,arr)=>
+          (arr.filter(v=>v===a).length>=arr.filter(v=>v===b).length?a:b),
+        null)
     },
     getTransfersByRecipient(id) {
       if (this.transfers.length){

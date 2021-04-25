@@ -61,7 +61,7 @@ a{
   font-weight: 700;
   @include transition(all 0.5s ease-in-out);
   &:hover{
-    background-color: #ffffff;
+    background-color: $white;
     color: $blue;
   }
 }
