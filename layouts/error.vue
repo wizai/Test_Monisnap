@@ -2,7 +2,7 @@
   <div class="container">
     <div class="container_404">
       <h1 v-if="error.statusCode === 404">404</h1>
-      <h1 v-else>Error</h1>
+      <h1 v-else>Erreur</h1>
       <h2 v-if="error.statusCode === 404">Oops! Cette page n'est pas disponible</h2>
       <h2 v-else>Une erreur s'est produite</h2>
       <p>Apparemment, rien n'a été trouvé à cette adresse.</p>

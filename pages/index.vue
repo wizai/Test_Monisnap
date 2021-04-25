@@ -102,12 +102,11 @@ export default {
       return this.recipients.length;
     },
     getNumberOfTransfersSuccess(){
-      let counter = 0;
-      let $this = this;
-      for (const transfer of $this.transfers) {
-        if (transfer.status === 'SUCCESS') counter += 1;
+      if (this.transfers.length) {
+        return this.transfers.filter(transfer => transfer.status === 'SUCCESS')
+          .map(transfer=>transfer.amount)
+          .reduce((accumulator, currentValue) => accumulator + currentValue)
       }
-      return counter;
     },
     getFavoriteDestination(){
       // Create an array with only country with property status is good and after get the value with the highest occurrence + index
