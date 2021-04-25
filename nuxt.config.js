@@ -1,4 +1,10 @@
 export default {
+  target: 'static',
+  mode: 'universal',
+  ssr: false,
+  generate: {
+    fallback: true
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Monisnap - Le transfert d\'argent qui vous redonne le sourire 😃',
