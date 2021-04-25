@@ -12,7 +12,7 @@
           <p class="block-history__item--txt">bénéficiaires</p>
         </div>
         <div class="block-history__item">
-          <p class="block-history__item--number">{{ getNumberOfTransfersSuccess() }}</p>
+          <p class="block-history__item--number">{{ getNumberOfTransfersSuccess() }}€</p>
           <p class="block-history__item--txt">envoyés</p>
         </div>
         <div class="block-history__item">
