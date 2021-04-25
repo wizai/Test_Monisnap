@@ -1,0 +1,18 @@
+@mixin make-col($size, $columns) {
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+  width: percentage($size / $columns) ;
+}
+
+@mixin row-cols($count) {
+  @include flexbox();
+  @include flex-flow(row wrap);
+  > * {
+    flex: 0 0 auto;
+    width: 100% / $count;
+  }
+}
+
+@mixin cols-col($count) {
+  column-count: $count;
+}

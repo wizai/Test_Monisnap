@@ -1,0 +1,11 @@
+@include keyframes(moveTextTop){
+  0%,
+  65% {
+    opacity: 0;
+    @include transform(translate3d(0, -75px, 0));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+}

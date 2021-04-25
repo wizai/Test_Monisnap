@@ -1,0 +1,138 @@
+//
+// Flex utility
+//
+
+.d-flex {
+  display: flex !important
+}
+
+.d-flex-wrap {
+  flex-wrap: wrap !important
+}
+
+.d-flex-nowrap {
+  flex-wrap: nowrap !important
+}
+
+.d-flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important
+}
+
+.d-inline-flex {
+  display: inline-flex !important
+}
+
+.d-flex-column {
+  flex-direction: column !important
+}
+
+.d-flex-row {
+  flex-direction: row !important
+}
+
+.d-flex-column-reverse {
+  flex-direction: column-reverse !important
+}
+
+.d-flex-row-reverse {
+  flex-direction: row-reverse !important
+}
+
+.d-align-items-start {
+  align-items: flex-start !important
+}
+
+.d-align-items-end {
+  align-items: flex-end !important
+}
+
+.d-align-items-center {
+  align-items: center !important
+}
+
+.d-align-items-baseline {
+  align-items: baseline !important
+}
+
+.d-align-items-stretch {
+  align-items: stretch !important
+}
+
+.d-align-self-auto {
+  align-self: auto !important
+}
+
+.d-align-self-start {
+  align-self: flex-start !important
+}
+
+.d-align-self-end {
+  align-self: flex-end !important
+}
+
+.d-align-self-center {
+  align-self: center !important
+}
+
+.d-align-self-baseline {
+  align-self: baseline !important
+}
+
+.d-align-self-stretch {
+  align-self: stretch !important
+}
+
+.d-justify-content-start {
+  justify-content: flex-start !important
+}
+
+.d-justify-content-end {
+  justify-content: flex-end !important
+}
+
+.d-justify-content-center {
+  justify-content: center !important
+}
+
+.d-justify-content-between {
+  justify-content: space-between !important
+}
+
+.d-justify-content-around {
+  justify-content: space-around !important
+}
+
+.d-align-content-start {
+  align-content: flex-start !important
+}
+
+.d-align-content-end {
+  align-content: flex-end !important
+}
+
+.d-align-content-center {
+  align-content: center !important
+}
+
+.d-align-content-between {
+  align-content: space-between !important
+}
+
+.d-align-content-around {
+  align-content: space-around !important
+}
+
+.d-align-content-stretch {
+  align-content: stretch !important
+}
+@for $i from 0 through 5 {
+  .d-flex-grow-#{$i} {
+    flex-grow: #{$i} !important
+  }
+  .d-flex-shrink-#{$i} {
+    flex-shrink: #{$i} !important
+  }
+  .d-item-order-#{$i} {
+    order: #{$i} !important
+  }
+}

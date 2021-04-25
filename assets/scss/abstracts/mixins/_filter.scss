@@ -1,0 +1,7 @@
+@mixin filter($content){
+  filter: $content;
+  -webkit-filter: $content;
+  -moz-filter: $content;
+  -o-filter: $content;
+  -ms-filter: $content;
+}
