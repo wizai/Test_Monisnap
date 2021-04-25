@@ -59,7 +59,7 @@ export default {
   }
   &__infos{
     padding-left: 12px;
-    max-width: calc(100% - 180px);
+    max-width: calc(100% - 250px);
     @include flex-grow(1);
     &--name{
       font-weight: 600;
