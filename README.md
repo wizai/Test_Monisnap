@@ -1,5 +1,7 @@
 # Test_Monisnap
 
+This project is a Technical assessment for Monisnap
+
 ## Build Setup
 
 ```bash
